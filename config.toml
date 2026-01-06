@@ -1,7 +1,7 @@
-base_url = "https://YOUR_URL.TLD"
-title = "site title"
-description = "YOUR_SITE_DESCRIPTION"
-author = "YOUR_NAME"
+base_url = "https://github.com/prcleary/zola"
+title = "Wikipaulia"
+description = "An epidemiologist dabbles in statistics, coding, open source software and the cloud."
+author = "Paul Cleary"
 theme = "tabi"
 generate_feeds = true
 compile_sass = true
