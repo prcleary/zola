@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+{# =================================================
+   NOTES SECTION (handled fully & exclusively here)
+   ================================================= #}
+{% if section.extra.is_notes %}
+
+  <h1 class="page-title">{{ section.title }}</h1>
+
+  {% if section.description %}
+    <p class="page-description">{{ section.description }}</p>
+  {% endif %}
+
+  {% if section.subsections | length > 0 %}
+  <section>
+    <ul class="section-list">
+      {% for path in section.subsections | sort %}
+        {% set subsection = get_section(path=path) %}
+        <li>
+          <a href="{{ subsection.permalink }}">{{ subsection.title }}</a>
+          {% if subsection.description %}
+            <p class="section-description">{{ subsection.description }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if section.pages | length > 0 %}
+  <section>
+    <ul class="page-list">
+      {% for page in section.pages %}
+        <li>
+          <a href="{{ page.permalink }}">{{ page.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+{% else %}
+
+{# =================================================
+   ALL OTHER SECTIONS (tabi default behaviour)
+   ================================================= #}
+
+{%- if lang == config.default_language -%}
+    {%- set expected_root = "/" -%}
+{%- else -%}
+    {%- set expected_root = "/" ~ lang ~ "/" -%}
+{%- endif -%}
+{%- set is_root_section = current_path == expected_root -%}
+
+{%- set show_projects_first = section.extra.show_projects_first | default(value=false) -%}
+{%- if show_projects_first -%}
+    {%- set first_section = "projects" -%}
+{%- else -%}
+    {%- set first_section = "posts" -%}
+{%- endif -%}
+
+{%- if section.extra.section_path or paginator and projects_path -%}
+    {%- set more_than_one_section_shown = true -%}
+{%- endif -%}
+
+<main {% if more_than_one_section_shown %}class="{{ first_section }}-first"{% endif %}>
+
+{%- if config.extra.hcard %}
+    {%- include "partials/hcard.html" -%}
+{% endif -%}
+
+{%- if section.extra.header %}
+    {%- include "partials/home_banner.html" -%}
+{%- elif section.content %}
+<section>
+    {{ section.content | safe }}
+</section>
+{%- endif %}
+
+{% if section.extra.section_path %}
+    {% set extra_section = get_section(path=section.extra.section_path) %}
+{% endif %}
+
+{% if section.extra.section_path %}
+    {% set path = section.extra.section_path | replace(from="/_index.md", to="") %}
+{% else %}
+    {% set path = section.path %}
+{% endif %}
+
+{%- if show_projects_first -%}
+    {%- include "partials/main_page_projects_list.html" -%}
+    {%- include "partials/main_page_posts_list.html" -%}
+{%- else -%}
+    {%- include "partials/main_page_posts_list.html" -%}
+    {%- include "partials/main_page_projects_list.html" -%}
+{%- endif -%}
+
+</main>
+
+{%- include "partials/extra_features.html" -%}
+
+{% endif %}
+
+{% endblock main_content %}

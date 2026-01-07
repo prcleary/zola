@@ -1,10 +1,7 @@
 +++
 title = "Notes"
-sort_by = "title"
-insert_anchor_links = "none"
+description = "Technical notes that are often useful to me and may occasionally be useful to others"
+
+[extra]
+is_notes = true
 +++
-
-## Notes
-
-- [Python](Python/)
-- [R](R/)

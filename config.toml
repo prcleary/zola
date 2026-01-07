@@ -1,6 +1,6 @@
 base_url = "https://prcleary.github.io/zola/"
 title = "Wikipaulia"
-description = "An epidemiologist dabbles in statistics, coding, open source software and the cloud."
+description = "An epidemiologist dabbles in statistics, coding, open source software, the cloud and AI."
 author = "Paul Cleary"
 theme = "tabi"
 generate_feeds = true
@@ -8,7 +8,7 @@ compile_sass = true
 minify_html = true
 build_search_index = true
 default_language = "en"
-taxonomies = [{name = "tags", feed = true}]
+taxonomies = [{feed = true}]
 
 
 [search]
@@ -34,6 +34,7 @@ bottom_footnotes = true
 # To use a Zola built-in theme, CSP needs to allow unsafe-inline for style-src.
 highlight_theme = "css"
 smart_punctuation = true
+external_links_class = "external"
 
 
 [extra]
@@ -49,7 +50,7 @@ smart_punctuation = true
 
 # Use sans-serif font everywhere.
 # By default, the serif font is only used in articles.
-override_serif_with_sans = false
+override_serif_with_sans = true
 
 # Enable JavaScript theme toggler to allow users to switch between dark/light mode.
 # If disabled, your site will use the theme specified in the `default_theme` variable.
@@ -89,7 +90,7 @@ stylesheets = []
 # Remote repository for your Zola site.
 # Used for `show_remote_changes` and `show_remote_source` (see below).
 # Supports GitHub, GitLab, Gitea, and Codeberg.
-# remote_repository_url = "https://github.com/welpo/tabi"
+remote_repository_url = "https://github.com/prcleary/zola"
 # Set this to "auto" to try and auto-detect the platform based on the repository URL.
 # Accepted values are "github", "gitlab", "gitea", and "codeberg".
 remote_repository_git_platform = "auto"  # Defaults to "auto".
@@ -130,7 +131,7 @@ show_date = true
 # "date" - Show only the original date of the post (default if unset).
 # "updated" - Show only the last updated date of the post. If there is no last updated date, it shows the original date.
 # "both" - Show both the original date and the last updated date.
-post_listing_date = "date"
+post_listing_date = "both"
 
 # Enable iine like buttons on all posts: https://iine.to/
 # Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
@@ -213,7 +214,7 @@ date_formats = [
 ]
 
 # Custom separator used in title tag and posts metadata (between date, time to read, and tags).
-separator = "•"
+separator = "|"
 
 # Use a shorter layout for All tags listing.
 # Default: tag_name – n post[s]
@@ -251,7 +252,6 @@ invert_title_order = false
 menu = [
     { name = "blog", url = "blog", trailing_slash = true },
     { name = "archive", url = "archive", trailing_slash = true },
-    { name = "tags", url = "tags", trailing_slash = true },
     { name = "notes", url = "notes", trailing_slash = true },
 ]
 
@@ -269,20 +269,20 @@ full_content_in_feed = true
 # Protect against spambots:
 # 1. Use base64 for email (convert at https://www.base64encode.org/ or `printf 'your@email.com' | base64`).
 # 2. Or, set 'encode_plaintext_email' to true for auto-encoding (only protects on site, not in public repos).
-# email = "bWFpbEBleGFtcGxlLmNvbQ=="  # base64 encoded version of "mail@example.com"
+email = "YmxvZ3NwYW1AcGF1bGNsZWFyeS5uZXQ="
 # Decoding requires ~400 bytes of JavaScript. If JS is disabled, the email won't be displayed.
 encode_plaintext_email = true  # Setting is ignored if email is already encoded.
 
 # Social media links for the footer.
 # Built-in icons: https://github.com/welpo/tabi/tree/main/static/social_icons
 # To use a custom icon, add it to your site's `static/social_icons` directory.
-# socials = [
-#     { name = "github", url = "https://github.com/welpo/", icon = "github" },
-#     { name = "soundcloud", url = "https://soundcloud.com/oskerwyld", icon = "soundcloud" },
-#     { name = "instagram", url = "https://instagram.com/oskerwyld", icon = "instagram" },
-#     { name = "youtube", url = "https://youtube.com/@oskerwyld", icon = "youtube" },
-#     { name = "spotify", url = "https://open.spotify.com/artist/5Hv2bYBhMp1lUHFri06xkE", icon = "spotify" },
-# ]
+socials = [
+    { name = "bluesky", url = "https://bsky.app/profile/paulcleary.net", icon = "bluesky" },
+    { name = "github", url = "https://github.com/prcleary/", icon = "github" },
+    { name = "letterboxd", url = "https://letterboxd.com/rusticana/", icon = "letterboxd" },
+    { name = "mastodon", url = "https://infosec.exchange/@carupalley", icon = "mastodon" },
+    { name = "orcid", url = "https://orcid.org/0000-0001-9335-5422", icon = "orcid" }
+]
 
 # Fediverse profile.
 # Adds metadata to feature the author's profile in Mastodon link previews.
@@ -303,7 +303,7 @@ encode_plaintext_email = true  # Setting is ignored if email is already encoded.
 # $AUTHOR will be replaced by the `author` variable.
 # $SEPARATOR will be replaced by the `separator` variable.
 # Markdown is supported (links, emphasis, etc).
-# copyright = "$TITLE © $CURRENT_YEAR $AUTHOR $SEPARATOR Unless otherwise noted, the content in this website is available under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license."
+copyright = "$TITLE © $CURRENT_YEAR $AUTHOR $SEPARATOR Unless otherwise noted, the content in this website is available under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license."
 
 # For multi-language sites, you can set a different copyright for each language.
 # The old way of setting `translated_copyright = true` and using i18n files is deprecated.

@@ -1,5 +1,10 @@
 +++
-title = "R notes"
+title = "R"
+sort_by = "title"
+
+[extra]
+is_notes = true
+
 +++
 
-- [testing](test)
+R-related notes.
