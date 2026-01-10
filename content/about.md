@@ -10,7 +10,7 @@ This is my blog, built with **Zola** and the **tabi** theme.
 
 I'm an epidemiologist working in UK public health and global health.  I use this blog/wiki mainly as a technical reference for myself.
 
-I am interested in many things, including:
+I am interested in too many things, including:
 
 - Epidemiology (natürlich)
 - Developments in statistics and related areas
