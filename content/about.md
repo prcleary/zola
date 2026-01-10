@@ -18,5 +18,5 @@ I am interested in many things, including:
 - Open-source software, self-hosting, cybersecurity
 - Global health informatics
 
-I used to have a different blog - you can still access it [here](/oldblog.html). I am gradually moving any useful stuff over.
+I used to have a different blog - you can still access it [here](/zola/oldblog.html). I am gradually moving any useful stuff over.
 
