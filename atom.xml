@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="https://prcleary.github.io/zola/feed_style.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <tabi:metadata xmlns:tabi="https://github.com/welpo/tabi">
+        <tabi:base_url>https:&#x2F;&#x2F;prcleary.github.io&#x2F;zola&#x2F;</tabi:base_url>
+        <tabi:separator>
+            |
+        </tabi:separator>
+        <tabi:about_feeds>This is a web feed, also known as an Atom feed. Subscribe by copying the URL from the address bar into your newsreader. Visit About Feeds to learn more and get started. It&#x27;s free.</tabi:about_feeds>
+        <tabi:visit_the_site>Visit website</tabi:visit_the_site>
+        <tabi:recent_posts>Recent posts</tabi:recent_posts>
+        <tabi:last_updated_on>Updated on $DATE</tabi:last_updated_on>
+        <tabi:default_theme></tabi:default_theme>
+        <tabi:post_listing_date>both</tabi:post_listing_date>
+        <tabi:current_section>Wikipaulia</tabi:current_section>
+    </tabi:metadata><title>Wikipaulia</title>
+        <subtitle>An epidemiologist dabbles in statistics, coding, open source software, the cloud and AI.</subtitle>
+    <link href="https://prcleary.github.io/zola/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://prcleary.github.io/zola" rel="alternate" type="text/html"/>
+    <generator uri="https://www.getzola.org/">Zola</generator><updated>2026-01-06T00:00:00+00:00</updated><id>https://prcleary.github.io/zola/atom.xml</id><entry xml:lang="en">
+        <title>New Zola blog; Dashboard Reports; integration teaser; most-used tech</title>
+        <published>2026-01-06T00:00:00+00:00</published>
+        <updated>2026-01-06T00:00:00+00:00</updated>
+        <author>
+            <name>Paul Cleary</name>
+        </author>
+        <link rel="alternate" href="https://prcleary.github.io/zola/blog/2026-01-06/" type="text/html"/>
+        <id>https://prcleary.github.io/zola/blog/2026-01-06/</id>
+        
+            <content type="html">&lt;ul&gt;
+&lt;li&gt;Testing out a new &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; blog using the &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;welpo&#x2F;tabi-start&quot;&gt;tabi-start&lt;&#x2F;a&gt; template - feels pretty Spartan at the moment compared to Tiddlywiki&lt;&#x2F;li&gt;
+&lt;li&gt;When I first started working with public health colleagues abroad, it was easiest for me to automate surveillance reporting using R and Markdown, but it could subsequently be fiendishly difficult to hand those processes over for colleagues to run, so I have been trying to extract the maximum analytical value from DHIS 2 ever since. The always wonderful &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;eyeseetea.com&#x2F;&quot;&gt;EyeSeeTea&lt;&#x2F;a&gt; have created an &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;EyeSeeTea&#x2F;dashboard-reports&#x2F;&quot;&gt;add-on&lt;&#x2F;a&gt; for DHIS 2 which allows you to convert a DHIS 2 dashboard into an (editable) Word document. Unfortunately it seems that the (now unsupported) 2.39.5 version of DHIS 2 that we have does not work with the add-on. There is some guidance in the README suggesting that you can extract JavaScript files from the DHIS 2 WAR file and include them in the app, but I am hoping an upcoming upgrade will sort this issue out for me.&lt;&#x2F;li&gt;
+&lt;li&gt;I think I am getting closer to an integration solution for the global health work, or at least an MVP, and I think it is quite exciting. I will add my notes to the &lt;a href=&quot;https:&#x2F;&#x2F;prcleary.github.io&#x2F;zola&#x2F;notes&#x2F;&quot;&gt;Notes&lt;&#x2F;a&gt; section when it is more developed.&lt;&#x2F;li&gt;
+&lt;li&gt;Current most-used tech at the start of 2026:
+&lt;ul&gt;
+&lt;li&gt;Server: Minisforum MS 01 running Proxmox, Nextcloud AIO, Karakeep, Paperless GPT, Vaultwarden; I’ve stopped using SearXNG as it kept getting blocked; lots of Cloudflare Tunnels currently, plus a demo information system running behind Nginx Proxy Manager; backed up to &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.borgbase.com&#x2F;&quot;&gt;BorgBase&lt;&#x2F;a&gt; but I really should be using &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.proxmox.com&#x2F;en&#x2F;products&#x2F;proxmox-backup-server&#x2F;overview&quot;&gt;Proxmox Backup Server&lt;&#x2F;a&gt;; BPC Energy UPS&lt;&#x2F;li&gt;
+&lt;li&gt;Desktop: MOREFINE S500+ AMD Ryzen Mini PC R7 6810U CPU Windows11 Pro Dual R45*2 LAN NVMe SSD Gaming PC HD DP Type-C WiFi Desktop Computer, which cost £240 off alibaba.com but has been pretty solid; running Pop_OS! (have not yet upgraded to latest version - I really like it)&lt;&#x2F;li&gt;
+&lt;li&gt;VPS hosting on Hetzner: MIAB (recently upgraded), and Rustdesk relay server (to access my Mum’s laptop)&lt;&#x2F;li&gt;
+&lt;li&gt;Phone: OnePlus Nord CE 3 Lite which has been fine; it is a bit small for reading for me now so I have also ordered an Android tablet&lt;&#x2F;li&gt;
+&lt;li&gt;I also recently switched from Gmail (after decades) to Proton equivalent services, which are fine&lt;&#x2F;li&gt;
+&lt;li&gt;I have also got a standing desk (converter really) and a four computer KVM switch so I am now unstoppable&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        </entry><entry xml:lang="en">
+        <title>Out with the old, in with the new; updates, plans and aspirations</title>
+        <published>2025-12-31T00:00:00+00:00</published>
+        <updated>2025-12-31T00:00:00+00:00</updated>
+        <author>
+            <name>Paul Cleary</name>
+        </author>
+        <link rel="alternate" href="https://prcleary.github.io/zola/blog/2025-12-31/" type="text/html"/>
+        <id>https://prcleary.github.io/zola/blog/2025-12-31/</id>
+        
+            <content type="html">&lt;ul&gt;
+&lt;li&gt;Well, 2025 ends with this ageing epidemiologist still endlessly curious and in love with life and the human race (yes, all of you, you beautiful complex bastards), maybe a bit tired&#x2F;bored at work but looking forward to a refreshing short sabbatical later in the year and thinking about how I can keep my job interesting for another 5-10 years when I’ve already done everything I wanted to do&lt;&#x2F;li&gt;
+&lt;li&gt;Resolutions for 2026? &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;rust-lang.org&#x2F;learn&#x2F;&quot;&gt;Learn Rust&lt;&#x2F;a&gt; (particularly for data engineering)! Get back to the me who did pull-ups every day and could always run 10 miles without noticeably training. Learn to improvise jazz guitar without sounding like Kraftwerk. That’s plenty. Reading for pleasure only this year and no Anki.&lt;&#x2F;li&gt;
+&lt;li&gt;I am going to experiment with alternative blog formats - I like the look of &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; (&lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&#x2F;issues&#x2F;2790&quot;&gt;maybe with Typst?&lt;&#x2F;a&gt;) but there are &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;jamstack.org&#x2F;generators&#x2F;&quot;&gt;so many options&lt;&#x2F;a&gt;. Tiddlywiki is a great personal knowledge dump but a bit lacking as a blog. I want to structure things a bit better, consolidate my thousands of other notes (still looking for a good AI option), and have a cleaner look, quick to load with a faff-free RSS feed.&lt;&#x2F;li&gt;
+&lt;li&gt;Other things I hope to do this year: try &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;pangolin.net&quot;&gt;Pangolin | Remote Access Platform&lt;&#x2F;a&gt; instead of Cloudflare Tunnels (the maximum upload file size for CT is stopping me uploading large PDFs); do more AI-assisted&#x2F;vibe coding (&lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;poe.com&#x2F;&quot;&gt;Poe&lt;&#x2F;a&gt; is a good place to dabble with the latest and best), particularly in terms of making better analytical methods more accessible; play with &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.jj-vcs.dev&quot;&gt;Jujutsu&lt;&#x2F;a&gt; and &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;n8n.io&quot;&gt;n8n - AI Workflow Automation Platform &amp;amp; Tools&lt;&#x2F;a&gt; and &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;forgejo.org&#x2F;&quot;&gt;Forgejo – Beyond coding. We forge.&lt;&#x2F;a&gt; and &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.jamovi.org&#x2F;&quot;&gt;jamovi - open statistical software for the desktop and cloud&lt;&#x2F;a&gt;; also do more journal reviewing, more teaching if anyone is interested, finish off (or get free of) some big pieces of work that are dragging me down and get my deafness sorted one way or another&lt;&#x2F;li&gt;
+&lt;li&gt;Didn’t do Advent of Code this year (relearnt skiing instead) but will do it in Rust next year&lt;&#x2F;li&gt;
+&lt;li&gt;Deleted my Facebook account finally and have revived my interest in Bluesky&#x2F;Mastodon by following them as a combined feed in &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;flareapp.moe&#x2F;&quot;&gt;Flare - All your social feeds, unified&lt;&#x2F;a&gt; (Rust learners are my people), though I am still more of a &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;karakeep.app&#x2F;&quot;&gt;Karakeep&lt;&#x2F;a&gt; kinda guy&lt;&#x2F;li&gt;
+&lt;li&gt;Running a home server has been tricky recently due to Docker&#x2F;LXC issues, Cloudflare outages and an undiagnosed issue with one plug circuit in my house (RCD keeps tripping), which led to much interesting learning about uninterruptible power supplies, &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;networkupstools.org&#x2F;&quot;&gt;Network UPS Tools&lt;&#x2F;a&gt;, &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;healthchecks.io&#x2F;&quot;&gt;Healthchecks.io&lt;&#x2F;a&gt; and &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;pushover.net&#x2F;&quot;&gt;Pushover: Simple Notifications for Android, iPhone, iPad, and Desktop&lt;&#x2F;a&gt;; I also realised &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;uptimerobot.com&#x2F;&quot;&gt;UptimeRobot: Free Website Monitoring Service&lt;&#x2F;a&gt; is not great for monitoring services using Cloudflare Tunnels so switched to &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;uptimekuma.org&#x2F;&quot;&gt;Uptime Kuma - A Fancy Self-Hosted Monitoring Tool&lt;&#x2F;a&gt; for my remaining VPS-hosted services&lt;&#x2F;li&gt;
+&lt;li&gt;Finally, I would like to wish a happy, healthy and meaningful 2026 to both of my readers.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        </entry><entry xml:lang="en">
+        <title>Karakeep; Paperless GPT; vibe coding; PeerTube; Kodi; Proxmox upgrade</title>
+        <published>2025-09-11T00:00:00+00:00</published>
+        <updated>2025-09-11T00:00:00+00:00</updated>
+        <author>
+            <name>Paul Cleary</name>
+        </author>
+        <link rel="alternate" href="https://prcleary.github.io/zola/blog/2025-09-11/" type="text/html"/>
+        <id>https://prcleary.github.io/zola/blog/2025-09-11/</id>
+        
+            <content type="html">&lt;ul&gt;
+&lt;li&gt;Off today so catching up with the blog.&lt;&#x2F;li&gt;
+&lt;li&gt;Lots going on as always; at work I am increasingly being led down a technical leadership path, which is not always comfortable for me, and mostly takes me away from doing lovely technical stuff, but it seems to be what they need me to do; the global health work is progressing, but as always taking longer than expected&lt;&#x2F;li&gt;
+&lt;li&gt;I am a bit behind with my reading plan, due to work spilling over into life, but I have just updated my reading log; I am travelling abroad soon and hope to catch up then&lt;&#x2F;li&gt;
+&lt;li&gt;I have got over my initial enthusiasm for &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;bsky.app&#x2F;&quot;&gt;Bluesky&lt;&#x2F;a&gt; and now just occasionally browse it or &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;infosec.exchange&#x2F;explore&quot;&gt;Mastodon&lt;&#x2F;a&gt;, usually when I am too brain-dead to even watch television.&lt;&#x2F;li&gt;
+&lt;li&gt;I have set up &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;karakeep.app&#x2F;&quot;&gt;Karakeep&lt;&#x2F;a&gt; on my home server and really like it; I am back to following lots of RSS feeds and Karakeep hoards any web pages I have visited in a searchable form; the Android app is simple but fine; I have even configured it to use the OpenAI API for automatic tagging&lt;&#x2F;li&gt;
+&lt;li&gt;Having realised that the OpenAI API was simple to use, and not that expensive if you carefully choose your LLM, I then set up &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;icereed&#x2F;paperless-gpt&quot;&gt;icereed&#x2F;paperless-gpt: Use LLMs and LLM Vision (OCR) to handle paperless-ngx - Document Digitalization powered by AI&lt;&#x2F;a&gt; to sort out my PDF collection; since I got it working it has worked well&lt;&#x2F;li&gt;
+&lt;li&gt;In general, and in part inspired by this article (&lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.virtualizationhowto.com&#x2F;2025&#x2F;09&#x2F;why-you-should-be-vibe-coding-in-your-home-lab-right-now&#x2F;&quot;&gt;Why You Should Be Vibe Coding in Your Home Lab Right Now! - Virtualization Howto&lt;&#x2F;a&gt;), I’ve been resorting to AI chatbots more and more to solve technical issues; I am not sure it saves time, as you often have to iterate several times to get working code, and then carefully check what it has given you, but it can be more fun than frustratedly Googling some obscure issue&lt;&#x2F;li&gt;
+&lt;li&gt;I set up &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Chocobozzz&#x2F;PeerTube&quot;&gt;Chocobozzz&#x2F;PeerTube: ActivityPub-federated video streaming platform using P2P directly in your web browser&lt;&#x2F;a&gt; as an interim platform for training videos, which I made using &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.awesomescreenshot.com&#x2F;&quot;&gt;Awesome Screenshot – Screen recorder and Screen capture&lt;&#x2F;a&gt;; it is a little bit slow to load but otherwise has worked well&lt;&#x2F;li&gt;
+&lt;li&gt;I am back to using &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;apps.ankiweb.net&#x2F;&quot;&gt;Anki - powerful, intelligent flashcards&lt;&#x2F;a&gt; more - it even helps with guitar practice.&lt;&#x2F;li&gt;
+&lt;li&gt;I managed to install &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;kodi.tv&#x2F;&quot;&gt;Open Source Home Theater Software | Kodi&lt;&#x2F;a&gt; on the family TV without breaking anything; now I can watch videos downloaded to my PC (usually free film noir or other classics from YouTube or similar resources - I don’t have the bandwidth for anything illegal) from any device that can connect via &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.samba.org&#x2F;&quot;&gt;Samba - opening windows to a wider world&lt;&#x2F;a&gt;, including my phone using &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.alphainventor.com&#x2F;cx-file-explorer&quot;&gt;Cx File Explorer | AlphaInventor&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;I have upgraded and tidied up the blog but there are still some things I don’t like about the current theme and I keep looking for alternatives.&lt;&#x2F;li&gt;
+&lt;li&gt;Upgraded &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;proxmox.com&#x2F;en&#x2F;&quot;&gt;Proxmox - Powerful open-source server solutions&lt;&#x2F;a&gt; to the latest version on my home server without major issues and added another terabyte of storage; it is not fully automated but all my backups now go to &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.borgbase.com&#x2F;&quot;&gt;BorgBase - Simple and Secure Offsite Backups&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;I fixed my instance of &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.xerte.org.uk&#x2F;index.php&#x2F;en&#x2F;&quot;&gt;Xerte Online Toolkit&lt;&#x2F;a&gt; so that a colleague can experiment with it for e-learning.&lt;&#x2F;li&gt;
+&lt;li&gt;Looking forward to a belated post-pandemic recovery sabbatical next year - only taking three months off, but planning to do lots of climbing and meet up with far-flung friends I haven’t seen in a long time.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        </entry><entry xml:lang="en">
+        <title>DHIS 2 indicators for incidence; a good webinar; backing up servers</title>
+        <published>2025-04-10T00:00:00+00:00</published>
+        <updated>2025-04-10T00:00:00+00:00</updated>
+        <author>
+            <name>Paul Cleary</name>
+        </author>
+        <link rel="alternate" href="https://prcleary.github.io/zola/blog/2025-04-10/" type="text/html"/>
+        <id>https://prcleary.github.io/zola/blog/2025-04-10/</id>
+        
+            <content type="html">&lt;ul&gt;
+&lt;li&gt;Just a quick post - I’m going to try to blog little and often in future&lt;&#x2F;li&gt;
+&lt;li&gt;I’ve always known it was possible to create rates in &lt;a href=&quot;https:&#x2F;&#x2F;prcleary.github.io&#x2F;zola&#x2F;notes&#x2F;DHIS2&#x2F;&quot;&gt;DHIS 2&lt;&#x2F;a&gt;, but it was more work than I expected when I came to do it; I’ve put my notes &lt;a href=&quot;https:&#x2F;&#x2F;prcleary.github.io&#x2F;zola&#x2F;notes&#x2F;DHIS2&#x2F;incidence-rates-in-dhis-2&#x2F;&quot;&gt;here&lt;&#x2F;a&gt; as there were a couple of things I had to work out in the process; it’s not difficult though&lt;&#x2F;li&gt;
+&lt;li&gt;The University of Oslo does a lot of good webinars about DHIS 2, so I’ve been trying to catch up with some of them recently; there was a &lt;a href=&quot;https:&#x2F;&#x2F;prcleary.github.io&#x2F;zola&#x2F;notes&#x2F;DHIS2&#x2F;implementation-considerations-infrastructure-dhis-2-academy&#x2F;&quot;&gt;particularly good one&lt;&#x2F;a&gt;) about infrastructure considerations for DHIS 2&lt;&#x2F;li&gt;
+&lt;li&gt;I have found a &lt;a href=&quot;https:&#x2F;&#x2F;prcleary.github.io&#x2F;zola&#x2F;notes&#x2F;Selfhosting&#x2F;backing-up-servers-and-desktops-with-borgmatic&#x2F;&quot;&gt;good way to back up servers off-site&lt;&#x2F;a&gt; that might be useful for the global health work&lt;&#x2F;li&gt;
+&lt;li&gt;I’ve finally got a new home computer! it is a mini-PC that I bought off alibaba.com and it’s actually great - will add my setup notes at some point&lt;&#x2F;li&gt;
+&lt;li&gt;Finally, I have been looking into app frameworks recently, as we have a need for an incident tracker of some kind and I am not sure shoehorning into DHIS 2 is the best approach; I had been planning to learn Plone to see if I could come up with anything useful with that, but I’ve just discovered the Frappe Framework which is also Python-based (based on Flask I think) and might be a better bet and so I’m playing with that: &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;frappe.io&#x2F;&quot;&gt;Frappe: Open Source Software&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        </entry>
+</feed>
